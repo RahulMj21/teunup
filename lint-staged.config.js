@@ -1,7 +1,7 @@
 module.exports = {
   // Lint then format TypeScript and JavaScript files
   "**/*.(ts|tsx|js)": (filenames) => [
-    `pnpm dlx eslint --fix ${filenames.join(" ")}`,
+    `pnpm run lint`,
     `pnpm dlx prettier --write ${filenames.join(" ")}`,
   ],
 
