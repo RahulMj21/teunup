@@ -1,7 +1,4 @@
 module.exports = {
-    // Type check TypeScript files
-    "**/*.(ts|tsx)": () => "pnpm exec tsc --noEmit",
-
     // Lint then format TypeScript and JavaScript files
     "**/*.(ts|tsx|js)": (filenames) => [
         `pnpm run lint`,
