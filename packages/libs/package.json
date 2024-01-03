@@ -1,0 +1,14 @@
+{
+    "name": "@repo/libs",
+    "version": "0.0.1",
+    "private": true,
+    "main": "index.ts",
+    "types": "index.ts",
+    "dependencies": {
+        "clsx": "^2.1.0",
+        "tailwind-merge": "^2.2.0"
+    },
+    "devDependencies": {
+        "@repo/typescript-config": "workspace:*"
+    }
+}

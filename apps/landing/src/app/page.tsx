@@ -1,3 +1,9 @@
+import { cn } from "@repo/libs";
+
 export default function Page(): JSX.Element {
-    return <div>Hello From Teunup landing page</div>;
+    return (
+        <div className={cn("text-destructive")}>
+            Hello From Teunup landing page
+        </div>
+    );
 }
