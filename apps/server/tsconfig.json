@@ -1,16 +1,19 @@
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "rootDir": "./src",
-    // "baseUrl": "./",
-    // "paths": {},
-    "outDir": "./dist",
-    "removeComments": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "rootDir": "./src",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "outDir": "./dist",
+        "moduleResolution": "node",
+        "removeComments": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true
+    }
 }

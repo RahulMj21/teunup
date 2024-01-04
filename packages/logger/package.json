@@ -1,0 +1,23 @@
+{
+    "name": "@repo/logger",
+    "version": "0.0.1",
+    "private": true,
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist/**"
+    ],
+    "scripts": {
+        "build": "tsup"
+    },
+    "devDependencies": {
+        "@repo/typescript-config": "workspace:*",
+        "@types/node": "^20.10.6",
+        "tsup": "^8.0.1"
+    },
+    "dependencies": {
+        "dayjs": "^1.11.10",
+        "pino": "^8.17.2",
+        "pino-pretty": "^10.3.1"
+    }
+}

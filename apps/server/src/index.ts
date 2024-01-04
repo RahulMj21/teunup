@@ -1,14 +1,16 @@
 import dotenv from "dotenv";
 dotenv.config();
 import { createServer } from "http";
-import app from "./app";
-import { logger } from "./utils";
+import app from "@/app";
+import { logger } from "@repo/logger";
 
 const init = async () => {
-  const PORT = process.env.PORT || 8000;
-  const server = createServer(app);
+    const PORT = process.env.PORT || 8000;
+    const server = createServer(app);
 
-  server.listen(PORT, () => logger.info(`Server is running on PORT: ${PORT}`));
+    server.listen(PORT, () =>
+        logger.info(`Server is running on PORT: ${PORT}`)
+    );
 };
 
 init();
